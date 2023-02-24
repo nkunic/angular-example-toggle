@@ -1,1 +1,22 @@
-<app-toggle></app-toggle>
+<div class="toggle">
+  <button mat-icon-button (click)="toggleFavorite()">
+    <mat-icon [svgIcon]="isFavorite ? 'heart' : 'heart-outline'"></mat-icon>
+  </button>
+</div>
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="cta-row">
+    <button class="back-button" mat-button routerLink="/">
+      <mat-icon aria-label="Login">keyboard_arrow_left</mat-icon>
+      Back to Dashboard
+    </button>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="flex">
+    <span class="stretch">World of Jokes</span>
+    <button mat-icon-button>
+      <mat-icon aria-label="Login">menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
