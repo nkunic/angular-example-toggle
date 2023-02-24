@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  
-  isFavorite: boolean;
 
-  toggleFavorite(): void {
-    this.isFavorite = !this.isFavorite;
+  isDanger: boolean;
+
+  toggleStatus(): void {
+    this.isDanger = !this.isDanger;
   }
 
 }
